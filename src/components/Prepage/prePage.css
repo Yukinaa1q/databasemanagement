@@ -1,0 +1,53 @@
+.introText {
+  position: absolute;
+  top: 243px;
+  left: 77px;
+  color: #000;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 469px;
+  height: 185px;
+  flex-shrink: 0;
+}
+.logInButton {
+  display: flex;
+  position: absolute;
+  top: 493px;
+  left: 77px;
+  width: 199px;
+  height: 82px;
+  padding: 23px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  border-radius: 999px;
+  background: #0984e3;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.logInButton:hover {
+  background-color: red;
+}
+.logInButton:active {
+  background-color: rgb(100, 1, 1);
+}
+.introPic {
+  position: absolute;
+  top: 186px;
+  left: 50%;
+  object-fit: cover;
+  width: 953px;
+  height: 652px;
+  flex-shrink: 5;
+}
+.fo {
+  position: absolute;
+  top: 100%;
+}

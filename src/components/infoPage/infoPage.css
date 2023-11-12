@@ -1,0 +1,79 @@
+.patientName,
+.pNumber,
+.pComo {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.patientName {
+  position: absolute;
+  top: 227px;
+}
+.pNumber {
+  position: absolute;
+  top: 393px;
+}
+.pComo {
+  position: absolute;
+  top: 572px;
+}
+.pNumIn,
+.pnIn {
+  width: 968px;
+  height: 106px;
+  border-radius: 10px;
+  background: #f2f1fa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+}
+.pCC {
+  width: 969px;
+  height: 158px;
+  border-radius: 10px;
+  border: none;
+  background: #f2f1fa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.pCC::placeholder {
+  text-align: justify;
+}
+.pn {
+  width: 390px;
+}
+
+.search {
+  position: absolute;
+  top: 780px;
+  left: 700px;
+  margin: 30px 0;
+  width: 459px;
+  height: 93px;
+  color: #fff;
+  text-align: center;
+  font-family: Andika;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #78d0ec;
+  border: none;
+  cursor: pointer;
+}
+.search:hover {
+  background-color: #04b4e9;
+}
+.search:active {
+  background-color: #024357;
+}

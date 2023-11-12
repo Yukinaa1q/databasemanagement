@@ -1,0 +1,113 @@
+.fo {
+  position: absolute;
+  top: 100%;
+}
+.logtex {
+  position: relative;
+  top: 110px;
+  margin: 0 79px;
+  width: 449px;
+  height: 185px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Andika;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.no {
+  position: relative;
+  margin: 0 79px;
+  top: 130px;
+  width: 463px;
+  height: 142px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Andika;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.no1 {
+  position: relative;
+  margin: 0 79px;
+  top: 110px;
+  width: 473px;
+  height: 110px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Andika;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.loginframe {
+  position: absolute;
+  left: 1135px;
+  top: 263px;
+  width: 580px;
+  height: fit-content;
+  font-size: 40px;
+  color: black;
+}
+.username {
+  position: absolute;
+  top: 397px;
+  left: 1146px;
+  border-radius: 10px;
+  display: block;
+  width: 544px;
+  height: 97px;
+  font-size: 25px;
+}
+.username::placeholder {
+  color: rgba(93, 90, 136, 0.5);
+  font-family: Andika;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.pass {
+  position: absolute;
+  top: 553px;
+  left: 1146px;
+  display: block;
+}
+.help {
+  position: absolute;
+  top: 679px;
+  left: 1473px;
+  width: 222px;
+  height: 33px;
+  flex-shrink: 0;
+  color: #b0b0b0;
+  font-size: 23px;
+  font-style: normal;
+  line-height: normal;
+  cursor: pointer;
+}
+.logbutt {
+  position: absolute;
+  top: 780px;
+  left: 1146px;
+  width: 544px;
+  height: 92px;
+  border-radius: 10px;
+  background-color: #78d0ec;
+  border: 1px solid var(--neutral-colors-headings-black);
+  transition: background-color 0.5s;
+  font-size: 25px;
+  color: #fff;
+}
+.logbutt:hover {
+  background-color: #1ea9e9;
+  color: #fff;
+}
+.logbutt:active {
+  background-color: #12a86e42;
+  transition: background-color 0s;
+}

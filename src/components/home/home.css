@@ -1,0 +1,53 @@
+.in {
+  position: relative;
+  top: 70px;
+  left: 10%;
+  width: 670px;
+  height: 124px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Andika;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.homePic {
+  position: absolute;
+  top: 376px;
+  left: 10%;
+  width: 494px;
+  height: 470px;
+  flex-shrink: 0;
+}
+.menu {
+  position: absolute;
+  top: 240px;
+  left: 65%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.option {
+  margin: 30px 0;
+  width: 459px;
+  height: 93px;
+  color: #fff;
+  text-align: center;
+  font-family: Andika;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #78d0ec;
+  border: none;
+  cursor: pointer;
+}
+.option:hover {
+  background-color: #04b4e9;
+}
+.option:active {
+  background-color: #024357;
+}
