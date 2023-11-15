@@ -1,0 +1,101 @@
+﻿Patient_ID;Comorbidity
+P000000001;Asthma
+P000000002;Diabetes type 1
+P000000002;Liver cancer
+P000000003;COPD
+P000000004;Chronic kidney
+P000000004;Hepatitis A
+P000000004;Tuberculosis
+P000000004;Hypertension
+P000000005;Diabetes type 1
+P000000005;Cirrhosis
+P000000005;Liver steatosis
+P000000006;Diabetes type 2
+P000000006;Asthma
+P000000006;Hypertension
+P000000010;Diabetes type 1
+P000000011;Obesity
+P000000013;Diabetes type 1
+P000000013;Hypertension
+P000000015;Liver cancer
+P000000015;Hypertension
+P000000017;Asthma
+P000000018;Hypertension
+P000000018;Obesity
+P000000021;Hypertension
+P000000021;Parkinson
+P000000022;Chronic kidney
+P000000023;Diabetes type 1
+P000000023;Cirrhosis
+P000000025;COPD
+P000000026;Hypertension 
+P000000027;Tuberculosis
+P000000028;Bronchitis
+P000000029;Diabetes type 1
+P000000029;Hypertension
+P000000029;Obesity
+P000000030;Chronic kidney
+P000000030;Tuberculosis
+P000000032;Liver cancer
+P000000033;Liver cancer
+P000000034;Lung cancer
+P000000035;Diabetes type 1
+P000000035;Chronic kidney
+P000000035;Bronchitis
+P000000036;Diabetes type 2
+P000000036;Parkinson
+P000000040;Obesity
+P000000041;Cirrhosis
+P000000042;Obesity
+P000000043;Diabetes type 2
+P000000043;Tuberculosis
+P000000043;Hypertension
+P000000046;Cirrhosis
+P000000047;COPD
+P000000048;COPD
+P000000049;Asthma
+P000000050;Hypertension
+P000000050;Obesity
+P000000052;Liver cancer
+P000000052;Tuberculosis
+P000000053;Bronchiectasis
+P000000054;Chronic kidney
+P000000055;Obesity
+P000000056;Diabetes type 1
+P000000056;Cirrhosis
+P000000056;Tuberculosis
+P000000056;Hypertension
+P000000058;Liver steatosis
+P000000059;Asthma
+P000000059;Hepatitis B
+P000000060;Tuberculosis
+P000000061;Diabetes type 2
+P000000061;Parkinson
+P000000061;Liver steatosis
+P000000062;Bronchiectasis
+P000000062;Parkinson
+P000000063;Hepatitis C
+P000000065;Lung cancer
+P000000066;Hepatitis A
+P000000069;Hypertension
+P000000070;Liver steatosis
+P000000071;Tuberculosis
+P000000073;Obesity
+P000000074;Hepatitis A
+P000000075;Obesity
+P000000076;Asthma
+P000000076;COPD
+P000000077;Pneumonia
+P000000077;Liver steatosis
+P000000079;Chronic kidney
+P000000080;Lung cancer
+P000000084;Diabetes type 1
+P000000084;COPD
+P000000084;Hypertension
+P000000091;Hepatitis A
+P000000092;Diabetes type 2
+P000000092;Hypertension
+P000000092;Obesity
+P000000095;Hepatitis C
+P000000096;Hepatitis B
+P000000098;Pneumonia

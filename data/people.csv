@@ -1,0 +1,71 @@
+﻿ID;Last_name;First_name;Date_of_birth;Gender;Address;Start_date_of_work;Doctor_flag;Manager_flag;Nurse_flag;Staff_flag;Volunteer_flag
+E000000001;Nguyen;Kim Ha;30/06/1970;F;163 Hong Bang, Ward 12, Dist 5, Ho Chi Minh City;15/08/2020;X;;;;
+E000000002;Phan;Huy Thuan;14/08/1980;M;228 Nguyen Huu Canh, Ward 22, Binh Thanh Dist, Ho Chi Minh City;15/08/2020;X;;;;
+E000000003;Dinh;Cao Nguyen;23/05/1984;M;373 Nguyen An Ninh, Di An Ward, Di An City, Binh Duong;15/08/2020;X;;;;
+E000000004;Dao;Trong Tri;04/04/1983;M;185 Tran Binh Trong, Ward 3, Dist 5, Ho Chi Minh City;15/08/2020;X;;;;
+E000000005;Nguyen;Hoai An;30/04/1975;F;787 Luy Ban Bich, Hoa Thanh Ward, Tan Phu Dist, Ho Chi Minh City;15/08/2020;;;X;;
+E000000006;Nguyen;Chanh Cuong;02/09/1969;M;362 Ben Binh Dong, Ward 15, Dist 8, Ho Chi Minh City;15/08/2020;;;X;;
+E000000007;Pham;Thi Thanh Tam;20/11/1986;F;186 Long Thuan, Long Phuoc Ward, Dist 9, Ho Chi Minh City;15/08/2020;;;X;;
+E000000008;Nguyen;Thi Thu Dung;01/06/1990;F;7 Huynh Tan Phat, Nha Be Town, Nha Be Dist, Ho Chi Minh City;15/08/2020;;;X;;
+E000000009;Nguyen;Tran Khanh Thi;28/06/1986;F;240 Hai Thuong Lan Ong, Ward 14, Dist 5, Ho Chi Minh City;15/08/2020;;;X;;
+E000000010;Do;Lam;07/03/1995;M;139 Cao Thang, Ward 4, Dist 3, Ho Chi Minh City;15/08/2020;;;;;X
+E000000011;Nguyen;Le Quoc Dat;12/04/1991;M;177 3 Thang 2, Ward 11, Dist 10, Ho Chi Minh City;15/08/2020;;;;X;X
+E000000012;Phan;Thi Ngoc Trinh;30/01/1989;F;8 Le Loi, Ward 4, Go Vap Dist, Ho Chi Minh City;15/08/2020;;;;X;X
+E000000013;Huynh;Thanh Phong;01/06/1989;M;17 Mai Thi Luu, Da Kao Ward, Dist 1, Ho Chi Minh City;15/08/2020;;;;X;
+E000000014;Nguyen;Thi Cam Tu;29/04/1995;F;15 Mai Chi Tho, Thu Thiem Ward, Dist 2, Ho Chi Minh City;15/08/2020;;;;X;X
+E000000015;Nguyen;Thi Nhu Y;14/09/1997;F;857 Hong Bang, Ward 9, Dist 6, Ho Chi Minh City;15/08/2020;;;;X;X
+E000000016;Le;Thai Nam;15/02/2003;M;444 Cach Mang Thang Tam, Ward 11, Dist 3, Ho Chi Minh City;15/08/2020;;;;;X
+E000000017;Le;Minh;01/01/1986;M;111 Kinh Duong Vuong, Ward 12, Dist 6, Ho Chi Minh City;15/08/2020;X;;;;
+E000000018;Tran;Van Son;22/07/1985;M;96 Le Loi, Tan Thoi Nhi Commune, Hoc Mon Dist, Ho Chi Minh City;15/08/2020;X;X;;;
+E000000019;Huynh;Tien Vuong;01/08/2002;M;566 Lac Long Quan, Ward 10, Tan Binh Dist, Ho Chi Minh City;15/08/2020;;;;;X
+E000000020;Nguyen;Thi Tam;01/01/1994;F;709 Kinh Duong Vuong, Ward 13, Dist 6, Ho Chi Minh City;15/08/2020;;;;;X
+E000000021;Le;Thu Hao;12/01/1989;F;129 Khanh Hoi, Ward 4, Dist 4, Ho Chi Minh City;30/08/2020;X;;;;
+E000000022;Le;Pham Huy Hoàng;01/01/1986;M;240 Hai Thuong Lan Ong, Ward 14, Dist 5, Ho Chi Minh City;30/08/2020;;;X;;
+E000000023;Tran;Thanh Thuy;15/03/1988;F;88 Thanh Thai, Ward 14, Dist 10, Ho Chi Minh City;30/08/2020;;;X;;X
+E000000024;Nguyen;Cong Thinh;07/10/1989;M;121 Kinh Duong Vuong, Ward 12, Dist 6, Ho Chi Minh City;30/08/2020;;;X;;X
+E000000025;Tran;Ngọc Bao;17/08/1988;M;66 Hoang Van Thu, Ward 9, Phu Nhuan Dist, Ho Chi Minh City;30/08/2020;;;;;X
+E000000026;Nguyen;Thi Thu Dung;21/12/1992;F;66 Hoang Van Thu, Ward 9, Phu Nhuan Dist, Ho Chi Minh City;30/08/2020;;;;;X
+E000000027;Dinh ;Manh Hai ;07/12/2000;M;186 Long Thuan, Long Phuoc Ward, Dist 9, Ho Chi Minh City;30/08/2020;;;;;X
+E000000028;Nguyen;Hoang Xuan Thao;01/01/1993;F;834 Au Co, Tan Thanh Ward, Tan Phu Dist, Ho Chi Minh City;30/08/2020;;;;X;
+E000000029;Phan;Thi Truc Mai;05/09/1989;F;193 Le Van Tho, Ward 8, Go Vap Dist, Ho Chi Minh City;30/08/2020;;;;X;
+E000000030;Do;Chi Thanh;01/01/1988;M;712 Nguyen Van Tao, Hiep Phuoc Commune, Nha Be Dist, Ho Chi Minh City;01/09/2020;X;;;;
+E000000031;Nguyen;The Nhan;04/06/1988;M;266 Ly Thuong Kiet, Ward 14, Dist 10, Ho Chi Minh City;01/09/2020;X;;;;
+E000000032;Nguyen;Thi Phuong Thoa;02/03/1992;F;267 Ly Thuong Kiet, Ward 14, Dist 10, Ho Chi Minh City;01/09/2020;X;;;;
+E000000033;Nguyen;Duy Minh;25/05/1990;M;80 Xuan Thoi Thuong 6, Xuan Thoi Dong Commune, Hoc Mon Dist, Ho Chi Minh City;01/09/2020;X;;;;
+E000000034;Nguyen;Hoai Minh Thanh;20/12/1969;F;533 Hau Giang, Ward 11, Dist 6, Ho Chi Minh City;01/09/2020;;;X;;X
+E000000035;Pham;Thi Thuy An;06/09/1986;F;15 Ton Duc Thang, Ben Nghe Ward, Dist 1, Ho Chi Minh City;01/09/2020;;;X;;
+E000000036;Le;Hoang Kim;01/01/1980;F;124 Tran Quang Khai, Tan Dinh Ward, Dist 1, Ho Chi Minh City;01/09/2020;;;X;;
+E000000037;Tran;Lam Hung;26/09/1988;M;133 Doc Lap, Tan Thanh Ward, Tan Phu Dist, Ho Chi Minh City;01/09/2020;;;X;;
+E000000038;Le;Cong Tuan;01/01/1994;M;26 Mai Chi Tho, Thu Thiem Ward, Dist 2, Ho Chi Minh City;01/09/2020;;;;;X
+E000000039;Cao;Minh Khang;31/03/2001;M;713 Kinh Duong Vuong, Ward 13, Dist 6, Ho Chi Minh City;01/09/2020;;;;;X
+E000000040;Tran;Van Tuan;21/01/1993;M;34 Huynh Tan Phat, Nha Be Town, Nha Be Dist, Ho Chi Minh City;01/09/2020;;;;;X
+E000000041;Pham;Tan Trung;04/01/1980;M;126 Nguyen Thi Minh Khai, Ward 6, Dist 3, Ho Chi Minh City;01/09/2020;;X;;;
+E000000042;Nguyen;Thi Thanh Ha;01/09/1985;F;79 Truong Son, Ward 2, Tan Binh Dist, Ho Chi Minh City;01/09/2020;;X;;X;
+E000000043;Tran;Tan Tai;11/07/1985;M;151 Ten Lua, Binh Tri Dong B Ward, Binh Tan Dist, Ho Chi Minh City;01/09/2020;;;;X;
+E000000044;Le;Viet Hung;20/02/1997;M;169 Nam Ky Khoi Nghia, Ward 7, Dist 3, Ho Chi Minh City;01/09/2020;;;;X;
+E000000045;Phan;Thi Ha Mi;07/05/1985;F;415 Tan Ky Tan Quy, Son Ky Ward, Tan Phu Ward, Ho Chi Minh City;10/09/2020;;;;;X
+E000000046;Huynh;Minh Tuan;17/11/1987;M;59 Thoai Ngoc Hau, Hoa Thanh Ward, Tan Phu Dist, Ho Chi Minh City;15/09/2020;X;;;;
+E000000047;Huynh;Minh Tuan;04/06/1985;M;52 Thap Muoi, Ward 2, Dist 6, Ho Chi Minh City;15/09/2020;X;;;;
+E000000048;Nguyen;Kim Anh;12/03/1984;F;149 Doc Lap, Tan Thanh Ward, Tan Phu Dist, Ho Chi Minh City;15/09/2020;X;;;;
+E000000049;Nguyen;Tri Vinh;07/12/2000;M;400 Tan Ky Tan Quy, Son Ky Ward, Tan Phu Dist, Ho Chi Minh City;20/09/2020;;;;;X
+E000000050;Hoang;Tri Viet;25/08/2002;M;68 Pho Duc Chinh, Nguyen Thai Binh Ward, Dist 1, Ho Chi Minh City;20/09/2020;;;;;X
+E000000051;Pham;Hoang Nguyen;30/11/1982;M;263 Hai Ba Trung, Ward 8, Dist 3, Ho Chi Minh City;30/09/2020;X;X;;;
+E000000052;Pham;Tuan Ngoc;26/09/1988;M;693 Su Van Hanh, Ward 12, Dist 10, Ho Chi Minh City;30/09/2020;X;;;;
+E000000053;Tran;Anh Dc;06/11/1977;M;42 Ky Dong, Ward 9, Dist 3, Ho Chi Minh City;30/09/2020;;;X;;
+E000000054;Cao;Thi Hong;04/06/1981;F;199 Nam Ky Khoi Nghia, Ward 7, Dist 3, Ho Chi Minh City;30/09/2020;;;X;;
+E000000055;Nguyen;My Anh;29/01/1987;F;133 Tran Quang Khai, Tan Dinh Ward, Dist 1, Ho Chi Minh City;30/09/2020;;;X;;
+E000000056;Ly;Van Nam;20/03/1971;M;888 Cach Mang Thang Tam, Ward 15, Dist 10, Ho Chi Minh City;01/10/2020;X;;;;
+E000000057;Ngo;Thanh Thuy;01/01/1985;F;36 Lac Long Quan, Phu Cuong Ward, Thu Dau Mot City, Binh Duong;01/10/2020;;;X;;
+E000000058;Hoang;Minh;11/04/1989;M;163 Hong Bang, Ward 12, Dist 5, Ho Chi Minh City;01/10/2020;;;X;;
+E000000059;Nguyen;Trong Tri;05/09/1984;M;39 Thao Dien, Thao Dien Ward, Dist 2, Ho Chi Minh City ;01/10/2020;;;X;;
+E000000060;Nguyen;My Anh;09/07/1985;F;68 Thach Lam, Phu Thanh Ward, Tan Phu Dist, Ho Chi Minh City;01/10/2020;;;X;;
+E000000061;Huỳnh;Thi Mong Cam;18/10/1989;F;52 Thap Muoi, Ward 2, Dist 6, Ho Chi Minh City;01/10/2020;;;X;;
+E000000062;Nguyen;Huynh Phuong;25/07/1979;M;400 Tan Ky Tan Quy, Son Ky Ward, Tan Phu Dist, Ho Chi Minh City;01/10/2020;;X;;;
+E000000063;Tran;Van Trung;14/02/1980;M;95 Ton That Thuyet, Ward 16, Dist 4, Ho Chi Minh City;01/10/2020;X;;;;
+E000000064;Le;Tien;22/12/1985;M;888 Cach Mang Thang Tam, Ward 15, Dist 10, Ho Chi Minh City;01/11/2020;X;;;;
+E000000065;Nguyen;Manh Tuan;08/03/1983;M;266 Hai Ba Trung, Ward 8, Dist 3, Ho Chi Minh City;01/11/2020;X;;;;
+E000000066;Nguyen;Van Sy;17/12/1985;M;115 Gia Long, Lai Thieu Ward, Thuan An City, Binh Duong;01/11/2020;;;;X;
+E000000067;Hoang;Ngoc Binh;23/03/1987;M;23 Phan Van Tri, Ward 10, Go Vap Dist, Ho Chi Minh City;01/11/2020;;;;X;
+E000000068;Nguyen;Minh Trang;01/11/2000;F;32 D1, Long Phuoc Ward, Dist 9, Ho Chi Minh City;01/11/2020;;;;X;
+E000000069;Le;Thi Thu Truc;13/07/1994;F;145 Vo Van Kiet, Nguyen Thai Binh Ward, Dist 1, Ho Chi Minh City;01/11/2020;;;;X;
+E000000070;Ngo;Dong Hung;09/11/1998;M;292 Tran Phu, Ward 8, Dist 5, Ho Chi Minh City;01/11/2020;;;;X;

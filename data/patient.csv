@@ -1,0 +1,101 @@
+﻿Patient_ID;Identity_number;Patient_full_name;Phone;Gender;Address
+P000000001;079081002023;Nguyen Van A;0392002023;M;286 Ly Thuong Kiet, Ward 14, Dist 10, Ho Chi Minh City
+P000000002;079069000123;Nguyen Van Tuan;0971882448;M;28 Thao Dien, Thao Dien Ward, Dist 2, Ho Chi Minh City 
+P000000003;079169002020;Nguyen Thi Anh;0986862424;F;28 Thao Dien, Thao Dien Ward, Dist 2, Ho Chi Minh City 
+P000000004;079159002023;Pham Thi Hong ;0391522251;F;80 Bui Vien, Pham Ngu Lao Ward, Dist 1, Ho Chi Minh City
+P000000005;079056000189;Nguyen Van Manh;0848488448;M;28 Mai Ba Huong, Le Minh Xuan Commune, Binh Chanh Dist, Ho Chi Minh City
+P000000006;072148000179;Pham Thi Thuy;0397221234;F;645 Su Van Hanh, Ward 12, Dist 10, Ho Chi Minh City
+P000000007;075076000989;Ly Van Tam;0353535589;M;103 Vanh Dai Dai hoc Quoc Gia, Tan Lap Ward, Di An City, Binh Duong
+P000000008;079172002134;Nguyen Thi Diep;0831234567;F;6 Alexandre De Rhodes, Ben Nghe Ward, Dist 1, Ho Chi Minh City
+P000000009;079189005613;Nguyen Thi Thanh Hang;0350551241;F;171 Nam Ky Khoi Nghia, Ward 7, Dist 3, Ho Chi Minh City
+P000000010;079066003079;Le Van Hai;0973031457;M;80 Tay Lan, Ba Diem Commune, Hoc Mon Dist, Ho Chi Minh City
+P000000011;086180000256;Pham Thi Hong;0358786666;F;45 Luong Van Can, Ward 15, Dist 8, Ho Chi Minh City
+P000000012;079203001229;Nguyen Phuoc Sang;0970491234;M;703 Nguyen Trai, Ward 11, Dist 5, Ho Chi Minh City
+P000000013;079169000573;Nguyen Thi Hoa;0984801208;F;707 Nguyen Trai, Ward 11, Dist 5, Ho Chi Minh City
+P000000014;079089001110;Pham Quoc Huy;0977468684;M;705 Nguyen Trai, Ward 11, Dist 5, Ho Chi Minh City
+P000000015;079168002703;Nguyen Thi An;0970886164;F;166 Nam Ky Khoi Nghia, Ward 7, Dist 3, Ho Chi Minh City
+P000000016;040082002026;Tran Van Bao;0837224466;M;255 Hai Thuong Lan Ong, Ward 14, Dist 5, Ho Chi Minh City
+P000000017;074058003200;Nguyen Van Dung;0973685457;M;206 Nguyen Duy Trinh, Binh Trung Tay Ward, Thu Duc City, Ho Chi Minh City
+P000000018;075076003450;Nguyen Le Ba Tu;0974442123;M;22 Lao Tu, Ward 11, Dist 5, Ho Chi Minh City
+P000000019;088190000473;Tran Kim Duyen;0359221023;F;23 Lao Tu, Ward 11, Dist 5, Ho Chi Minh City
+P000000020;079304001144;Nguyen Thi Anh Hong;0392186465;F;22 Pham Hung, Ward 10, Dist 8, Ho Chi Minh City
+P000000021;079049009613;Huynh Minh Thanh;0971622664;M;10 Trang Tu, Ward 14, Dist 5, Ho Chi Minh City
+P000000022;079086007209;Tran Bao Khanh;0391546678;M;188 Nguyen Van Huong, Thao Dien Ward, Dist 2, Ho Chi Minh City
+P000000023;079142001119;Nguyen Thi An;0984120053;F;701 Nguyen Trai, Ward 11, Dist 5, Ho Chi Minh City
+P000000024;079086003200;Nguyen Van An;0972524488;M;5 Nguyen Tat Thanh, Ward 12, Dist 4, Ho Chi Minh City
+P000000025;075086001122;Nguyen Van A;0984646688;M;566 Lac Long Quan, Ward 10, Tan Binh Dist, Ho Chi Minh City
+P000000026;049075007575;Nguyen Van Anh;0822133145;M;567 Lac Long Quan, Ward 10, Tan Binh Dist, Ho Chi Minh City
+P000000027;079179000009;Huynh Thi Thao;0970492222;F;703 Nguyen Trai, Ward 11, Dist 5, Ho Chi Minh City
+P000000028;079082002011;Nguyen Huy Hoang;0848488448;M;28 Mai Ba Huong, Le Minh Xuan Commune, Binh Chanh Dist, Ho Chi Minh City
+P000000029;079145001003;Nguyen Thi Ba;0396518749;F;223 Nguyen Huu Canh, Ward 22, Binh Thanh Dist, Ho Chi Minh City
+P000000030;079147000103;Le Thi Thao;0971110080;F;68 Cao Thang, Ward 3, Dist 3, Ho Chi Minh City
+P000000031;042188000045;Cao Thi My Kim;0328812636;F;32 Tran Quang Dieu, Ward 14, Dist 3, Ho Chi Minh City
+P000000032;042086001146;Le Tan Phuc;0325412099;M;5 Dinh Le, Ward 12, Dist 4, Ho Chi Minh City
+P000000033;080186002008;Nguyen Thi Huong;0977864311;F;125 Dong Van Cong, Thanh My Loi Ward, Dist 2, Ho Chi Minh City
+P000000034;082174000369;Nguyen Thi Nga;0987771155;F;186 Hong Bang, Ward 12, Dist 5, Ho Chi Minh City
+P000000035;079065004111;Nguyen Van Mot;0971095566;M;200 Nguyen Tri Phuong, Ward 4, Dist 10, Ho Chi Minh City
+P000000036;079045004444;Pham Van Hoang;0396518749;M;223 Nguyen Huu Canh, Ward 22, Binh Thanh Dist, Ho Chi Minh City
+P000000037;079076003666;Pham Van Bon;0985127749;M;541 Cach Mang Thang Tam, Ward 11, Dist 3, Ho Chi Minh City
+P000000038;079186003666;Le Thi Kim Thoa;0358786015;F;12 Tran Binh, Ward 2, Dist 6, Ho Chi Minh City
+P000000039;077188000459;Nguyen Thi Mai;0970448888;F;185 Hong Bang, Ward 12, Dist 5, Ho Chi Minh City
+P000000040;038069001690;Nguyen Van A;0323066633;M;28 Long Vinh, Binh Hung Commune, Binh Chanh Dist, Ho Chi Minh City
+P000000041;079183009613;Tran Thi Cuc;0396518749;F;42 Cao Lo, Ward 4, Dist 8, Ho Chi Minh City
+P000000042;079165005519;Nguyen Thi Linh;0842311156;F;11 Phan Van Chuong, Tan Phu Ward, Dist 7, Ho Chi Minh City
+P000000043;079149004949;Tran Thi Hai;0351182020;F;77 Thoai Ngoc Hau, Hoa Thanh Ward, Tan Phu Dist, Ho Chi Minh City
+P000000044;079196003020;Pham Thi Thuy Nga;0970009999;F;17 Thu Khoa Huan, Ward 8, Tan Binh Dist, Ho Chi Minh City
+P000000045;075186000992;Nguyen Thi Kim Tuyen;0982002034;F;71 Nguyen Van Luong, Ward 10, Dist 6, Ho Chi Minh City
+P000000046;079076006778;Nguyen Van Dung;0849135455;M;52 Pho Duc Chinh, Nguyen Thai Binh Ward, Dist 1, Ho Chi Minh City
+P000000047;079156000709;Nguyen Thi Nam;0989112544;F;32 Phan Van Bay, Hiep Phuoc Commune, Nha Be Dist, Ho Chi Minh City
+P000000048;075149003056;Tran Thi Thanh;0835195151;F;109 Thanh Thai, Ward 14, Dist 10, Ho Chi Minh City
+P000000049;074177003000;Nguyen Thi Mai;0326462066;F;105 Thanh Thai, Ward 14, Dist 10, Ho Chi Minh City
+P000000050;086048000412;Phan Tan Hoa;0974017778;M;45 Luong Van Can, Ward 15, Dist 8, Ho Chi Minh City
+P000000051;079088000321;Nguyen Khanh Long;0326117438;M;123 Khanh Hoi, Ward 4, Dist 4, Ho Chi Minh City
+P000000052;079065001219;Huynh Vinh Phuc;0982151719;M;136 Cao Thang, Ward 4, Dist 3, Ho Chi Minh City
+P000000053;079169002332;Phan Thi Thuy Vi;0358180045;F;188 Le Dai Hanh, Ward 15, Dist 1, Ho Chi Minh City
+P000000054;079156006789;Le Thi Bich;0978001234;F;10 Phan Van Tri, Ward 10, Go Vap Dist, Ho Chi Minh City
+P000000055;087188001423;Le Thi Hong dao;0941152327;F;123 Khanh Hoi, Ward 4, Dist 4, Ho Chi Minh City
+P000000056;079145001023;Nguyen Thi Thao;0397897777;F;5 Nguyen Binh Khiem, Ben Nghe Ward, Dist 1, Ho Chi Minh City
+P000000057;079089000111;Nguyen Van Nhan;0881234567;M;7 Nguyen Binh Khiem, Ben Nghe Ward, Dist 1, Ho Chi Minh City
+P000000058;072183000169;Ngo Thi Kim;0973993332;F;32 An Duong Vuong, Ward 9, Dist 5, Ho Chi Minh City
+P000000059;079056000656;Pham Tuan Hai;0322462357;M;80 Bui Vien, Pham Ngu Lao Ward, Dist 1, Ho Chi Minh City
+P000000060;074166003450;Nguyen Thi Anh;0825556666;F;206 Nguyen Duy Trinh, Binh Trung Tay Ward, Dist 2, Ho Chi Minh City
+P000000061;082147000369;Nguyen Thi Tham;0980220122;F;889 Ta Quang Buu, Ward 5, Dist 8, Ho Chi Minh City
+P000000062;079145001344;Pham Thi Thuy;0849929193;F;890 Ta Quang Buu, Ward 5, Dist 8, Ho Chi Minh City
+P000000063;086068000446;Nguyen Van A;0827717189;M;82 Tue Tinh, Ward 13, Dist 11, Ho Chi Minh City
+P000000064;066078000234;Huynh Van Sang;0328868028;M;21 Hung Vuong, Ward 4, Dist 5, Ho Chi Minh City
+P000000065;058179000909;Pham Thi Thanh;0329023017;F;543 Kinh Duong Vuong, Ward 10, Dist 6, Ho Chi Minh City
+P000000066;072063004187;Le Tran Trong Tam;0948117766;M;34 Ky Dong, Ward 9, Dist 3, Ho Chi Minh City
+P000000067;082079001127;Nguyen Van Nhat;0975336969;M;360 Tam Da, Truong Thanh Ward, Dist 9, Ho Chi Minh City
+P000000068;079202001549;Tran Tuan Nam;0396518749;M;31 Ky Dong, Ward 9, Dist 3, Ho Chi Minh City
+P000000069;079055001555;Cao Cong Tuan;0832566636;M;75 Le Thanh Ton, Ben Nghe Ward, Dist 1, Ho Chi Minh City
+P000000070;079088000188;Nguyen Van Hiep;0971014444;M;30 Hung Vuong, Ward 4, Dist 5, Ho Chi Minh City
+P000000071;079163000050;Tran Thi Mai Thanh;0983553789;F;17 Thu Khoa Huan, Ward 8, Tan Binh Dist, Ho Chi Minh City
+P000000072;079201004052;Nguyen Quoc Thai;0949991111;M;588 Huynh Tan Phat, Phu Thuan Ward, Dist 7, Ho Chi Minh City
+P000000073;086065000202;Tran Van Thanh;0971934567;M;199 Pham Van Chieu, Ward 14, Go Vap Dist, Ho Chi Minh City
+P000000074;080176001111;Pham Thi Kieu;0399153154;F;593 Huynh Tan Phat, Phu Thuan Ward, Dist 7, Ho Chi Minh City
+P000000075;079302002006;Tran Thi Huyen Thanh;0985127749;F;541 Cach Mang Thang Tam, Ward 11, Dist 3, Ho Chi Minh City
+P000000076;054054005454;Phan Cao Son;0396222123;M;33 Ky Dong, Ward 9, Dist 3, Ho Chi Minh City
+P000000077;058158005858;Phan Thi Thanh;0970231141;F;888 Hong Bang, Ward 9, Dist 6, Ho Chi Minh City
+P000000078;079089005050;Tran Van Minh;0983413131;M;868 Hong Bang, Ward 9, Dist 6, Ho Chi Minh City
+P000000079;079059002029;Phan Thanh Ha;0989991145;M;326 An Duong Vuong, Ward 3, Dist 5, Ho Chi Minh City
+P000000080;079177000107;Ngo Thi Mai;0830201123;F;13 Luong Dinh Cua, An Phu Ward, Thu Duc City, Ho Chi Minh City
+P000000081;079195002084;Tran Thi Thai Thanh;0979919198;F;709 Kinh Duong Vuong, Ward 13, Dist 6, Ho Chi Minh City
+P000000082;079092002080;Nguyen Van An;0974882579;M;216 3 thang 2, Ward 12, Dist 10, Ho Chi Minh City
+P000000083;079195002083;Nguyen Thi Thu Hong;0855058899;F;108 Quang Trung, Ward 11, Go Vap Dist, Ho Chi Minh City
+P000000084;079055001333;Huynh Van Hoa;0394696251;M;311 An Duong Vuong, Ward 3, Dist 5, Ho Chi Minh City
+P000000085;079186001886;Nguyen Thi Linh;0882527112;F;80 Bui Vien, Pham Ngu Lao Ward, Dist 1, Ho Chi Minh City
+P000000086;079181008070;Hoang Thi Thanh Truc;0981223411;F;28 Mai Ba Huong, Le Minh Xuan Commune, Binh Chanh Dist, Ho Chi Minh City
+P000000087;079080008029;Nguyen Minh Khoa;0392186465;M;22 Pham Hung, Ward 10, Dist 8, Ho Chi Minh City
+P000000088;091191009885;Tran Thi Cam Tien;0970011500;F;1088 Nguyen Van Linh, Tan Phong Ward, Dist 7, Ho Chi Minh City
+P000000089;078172005472;Nguyen Thi Hoa;0352224155;F;38 Phu Dong Thien Vuong, Ward 11, Dist 5, Ho Chi Minh City
+P000000090;079154005455;Nguyen Thi Tu;0972881111;F;359 Su Van Hanh, Ward 10, Dist 10, Ho Chi Minh City
+P000000091;079060008193;Pham Van Phuc;0391342888;M;17 Thu Khoa Huan, Ward 8, Tan Binh Dist, Ho Chi Minh City
+P000000092;079150002050;Pham Thi Be;0354118989;F;12 Cong Hoa, Ward 12, Tan Binh Dist, Ho Chi Minh City.
+P000000093;091089009889;Nguyen Van Dung;0970001400;M;1088 Nguyen Van Linh, Tan Phong Ward, Dist 7, Ho Chi Minh City
+P000000094;079304001029;Nguyen Thanh Ha;0970492222;F;703 Nguyen Trai, Ward 11, Dist 5, Ho Chi Minh City
+P000000095;079061006115;Huynh Trong Khang;0985710777;M;158 Nguyen Huu Tho, Phuoc Kien Commune, Nha Be Dist, Ho Chi Minh City
+P000000096;079085000814;Nguyen Van Nam;0971352426;M;128 Ngo Quyen, Lai Thieu Ward, Thuan An City, Binh Duong
+P000000097;087190000123;Nguyen Thi Anh;0356667171;F;96 Nam Ky Khoi Nghia, Ben Nghe Ward, Dist 1, Ho Chi Minh City
+P000000098;079075000744;Tran Van Bay;0980654153;M;5 Cong Lo, Ward 15, Tan Binh Dist, Ho Chi Minh City
+P000000099;082203002222;Nguyen Gia Huy;0987771155;M;186 Hong Bang, Ward 12, Dist 5, Ho Chi Minh City
+P000000100;079188000788;Huynh Thi Mai Tham;0394113537;F;66 Truong Son, Ward 2, Tan Binh Dist, Ho Chi Minh City

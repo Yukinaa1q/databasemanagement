@@ -1,0 +1,51 @@
+﻿Unique_code;Medication_name;Effects;Price;Expiration_date
+M000000001;Molnupiravir;Help fight the coronavirus infection;8500;01/05/2024
+M000000002;Paracetamol;Ease pain and lower a high temperature;800;30/01/2025
+M000000003;Dexamethasone;Suppress inflammation and the immune system;350;01/01/2025
+M000000004;Chloroquine phosphate ;Reduce viral load and improve lung function and recovery time;500;15/01/2025
+M000000005;Ibuprofen;Treat pain, inflammation, and fever;750;01/06/2024
+M000000006;Aspirin;Prevent blood clots, treat pain, inflammation, and fever;1000;01/06/2024
+M000000007;Dextromethorphan;Reduce the frequency and severity of coughs;800;15/06/2024
+M000000008;Loperamide;Reduce intestinal motility;750;01/12/2023
+M000000009;Chlorpheniramine;Treat the symptoms of allergies and relieve the symptoms;750;30/12/2023
+M000000010;Codeine;Help pain reliever and cough suppressant;750;01/06/2024
+M000000011;Acetylsalicylic acid;Control viral replication, inflammation, and thrombotic risk;1200;30/06/2024
+M000000012;Amitriptyline;Help with sleep problems and headache;1500;01/12/2023
+M000000013;Morphine;Relieve the pain of patients;5000;01/05/2024
+M000000014;Tessalon perles;Reduce the frequency and severity of coughs;3500;30/12/2023
+M000000015;Ritonavir ;Boost the levels of other antiretroviral medications;1250;30/12/2023
+M000000016;Tocilizumab ;Reduce the inflammation associated with severe COVID-19;3500;01/05/2025
+M000000017;Remdesevir ;Reduce the severity of symptoms;900;30/01/2024
+M000000018;Acetaminophen ;Reduce fever and chills;1200;01/06/2025
+M000000019;Naproxen;Treat pain, inflammation, and fever;1600;30/01/2024
+M000000020;Ketorolac;Treat severe pain and relieve the symptoms;850;30/01/2025
+M000000021;Guaifenesin;Help loosen mucus and make it easier to cough up;900;15/01/2024
+M000000022;Atazanavir;Reduce the severity of symptoms;1000;01/01/2024
+M000000023;Azithromycin ;Treat many different types of infections caused by bacteria;3000;30/01/2024
+M000000024;Lopinavir ;Reduce the severity of symptoms;1000;15/05/2025
+M000000025;Diphenhydramine;Treat the symptoms of allergies and to promote sleep;850;01/12/2025
+M000000026;Pseudoephedrine;Relieve nasal congestion;1200;01/12/2025
+M000000027;Phenylephrine;Relieve nasal congestion;1800;15/01/2024
+M000000028;Ondansetron HCL;Treat nausea and allergies and relieve the symptoms;1500;01/01/2024
+M000000029;Promethazine;Treat nausea and vomiting and relieve the symptoms;1750;15/01/2025
+M000000030;Metoclopramide hydrochloride;Treat nausea and heartburn and relieve the symptoms;950;01/01/2025
+M000000031;Ringers lactate;Use for fluid resuscitation;1250;01/01/2025
+M000000032;Plasma-Lyte;Use for fluid resuscitation and maintenance;1750;30/01/2024
+M000000033;Succinylcholine;Paralyze the muscles of patients;850;01/10/2025
+M000000034;Rocuronium;Paralyze the muscles of patients;1200;01/06/2025
+M000000035;Propofol;Induce and maintain anesthesia and use to sedate patients;1500;30/01/2024
+M000000036;Ketamine;Induce and maintain anesthesia and use to treat pain and to relieve agitation;2500;01/05/2024
+M000000037;Midazolam;Induce and maintain sedation or anesthesia and use to relieve anxiety and to treat seizures;4500;30/01/2024
+M000000038;Normal saline;Use for a variety of purposes, including hydration, irrigation, and cleansing;1750;15/06/2025
+M000000039;Hydromorphone;Treat moderate to severe pain;2200;01/05/2025
+M000000040;Hydrocodone;Treat moderate to severe pain;1600;30/01/2025
+M000000041;Oxycodone;Treat moderate to severe pain;900;01/01/2025
+M000000042;Fentanyl;Treat severe pain and breakthrough pain in patients with cancer;850;01/06/2025
+M000000043;Norepinephrine;Increase blood pressure and heart rate;1500;15/05/2025
+M000000044;Epinephrine;Treat allergic reactions, asthma attacks, and heart attacks;1750;01/01/2025
+M000000045;Vasopressin;Increase blood pressure and to treat water retention;3500;01/06/2025
+M000000046;Furosemide;Treat high blood pressure and heart failure;2700;01/01/2024
+M000000047;Carbocisteine;Treat mucus buildup and cough;1600;30/01/2024
+M000000048;Hydrocortisone Sod Succinate;Treat inflammation and treat shock;900;15/05/2025
+M000000049;Lansoprazole;Treat heartburn and acid reflux;750;01/06/2025
+M000000050;Dobutamine;Increase heart rate and blood pressure;1800;01/05/2024
