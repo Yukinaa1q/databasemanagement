@@ -6,7 +6,9 @@ CREATE TABLE Patient(
     gender              CHAR(5)     NOT NULL,
     address             CHAR(100)   NOT NULL
 );
--- select * from patient ;
+--select * from patient ;
+
+drop user cascade constraint;
 
 
 CREATE TABLE Symptom (
@@ -41,24 +43,24 @@ CREATE TABLE DischargeDate(
 CREATE TABLE Test(
     test_id     CHAR(10)    NOT NULL    PRIMARY KEY,
     test_date   DATE        NOT NULL,
-    test_time   TIMESTAMP        NOT NULL,
+    test_time   TIMESTAMP         NOT NULL,
     patient_id REFERENCES Patient(patient_id)
 );
--- select * from test;
+Describe Test;
 
 -- -- Step 1: Create a new column 'datetime' with TIMESTAMP data type
  ALTER TABLE Test
  ADD (datetime TIMESTAMP NOT NULL);
 
 -- -- Step 2: Update the 'datetime' column with the combination of 'test_date' and 'test_time'
- UPDATE Test
- SET datetime = TO_TIMESTAMP(test_date || ' ' || TO_CHAR(test_time, 'HH24:MI:SS'), 'DD/MM/YYYY HH24:MI:SS');
+-- UPDATE Test
+-- SET datetime = TO_TIMESTAMP(test_date || ' ' || TO_CHAR(test_time, 'HH24:MI:SS'), 'DD/MM/YYYY HH24:MI:SS');
 
 -- -- Drop the 'test_date' column
  ALTER TABLE Test
  DROP COLUMN test_date;
 
--- -- Drop the 'test_time' column
+ -- Drop the 'test_time' column
  ALTER TABLE Test
  DROP COLUMN test_time;
  truncate table test;
