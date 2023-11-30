@@ -1,22 +1,21 @@
 CREATE TABLE Patient(
     patient_id          CHAR(10)    NOT NULL    PRIMARY KEY,
-    identity_number     CHAR(12)    NOT NULL,
+    identity_number     CHAR(12)    UNIQUE      NOT NULL,
     patient_full_name   CHAR(30)    NOT NULL,
     phone               CHAR(10)    NOT NULL,
     gender              CHAR(5)     NOT NULL,
-    address             CHAR(100)   NOT NULL
+    address             CHAR(100)   NOT NULL,
+    warning             CHAR(1)     NULL    CHECK (warning IN ('Y', 'N'))                    
 );
---select * from patient ;
-
-drop user cascade constraint;
+-- select * from patient ;
 
 
 CREATE TABLE Symptom (
-    symptom_name CHAR(100) NOT NULL,
-    start_date DATE NOT NULL,
-    end_date DATE NULL,
+    symptom_name    CHAR(100)   NOT NULL,
+    start_date      DATE        NOT NULL,
+    end_date        DATE        NULL,
     is_serious CHAR(1) NOT NULL CHECK (is_serious IN ('Y', 'N')),
-    patient_id REFERENCES Patient(patient_id) NOT NULL,
+    patient_id REFERENCES Patient(patient_id)   ON DELETE CASCADE   NOT NULL,
     CONSTRAINT symptom_key PRIMARY KEY(start_date, symptom_name, patient_id)
 );
 -- SELECT * FROM SYMPTOM;
@@ -33,7 +32,7 @@ CREATE TABLE Symptom (
 -- VALUES ('P000000100', 'Difficulty breathing or shortness of breath', to_date('09/02/2021', 'DD/MM/YYYY'), null, 'Y');
 
 CREATE TABLE DischargeDate(
-    patient_id REFERENCES Patient(patient_id) NOT NULL,
+    patient_id REFERENCES Patient(patient_id)   ON DELETE CASCADE   NOT NULL,
     discharge_date  DATE    NOT NULL,
     CONSTRAINT discharge_date_key PRIMARY KEY(patient_id, discharge_date)
 );
@@ -42,28 +41,27 @@ CREATE TABLE DischargeDate(
 
 CREATE TABLE Test(
     test_id     CHAR(10)    NOT NULL    PRIMARY KEY,
-    test_date   DATE        NOT NULL,
-    test_time   TIMESTAMP         NOT NULL,
-    patient_id REFERENCES Patient(patient_id)
+    datetime    TIMESTAMP   NOT NULL,
+    patient_id REFERENCES Patient(patient_id)   ON DELETE CASCADE   NOT NULL
 );
-Describe Test;
+-- select * from test;
 
 -- -- Step 1: Create a new column 'datetime' with TIMESTAMP data type
- ALTER TABLE Test
- ADD (datetime TIMESTAMP NOT NULL);
+-- ALTER TABLE Test
+-- ADD (datetime TIMESTAMP NOT NULL);
 
 -- -- Step 2: Update the 'datetime' column with the combination of 'test_date' and 'test_time'
 -- UPDATE Test
 -- SET datetime = TO_TIMESTAMP(test_date || ' ' || TO_CHAR(test_time, 'HH24:MI:SS'), 'DD/MM/YYYY HH24:MI:SS');
 
 -- -- Drop the 'test_date' column
- ALTER TABLE Test
- DROP COLUMN test_date;
+-- ALTER TABLE Test
+-- DROP COLUMN test_date;
 
- -- Drop the 'test_time' column
- ALTER TABLE Test
- DROP COLUMN test_time;
- truncate table test;
+-- -- Drop the 'test_time' column
+-- ALTER TABLE Test
+-- DROP COLUMN test_time;
+-- truncate table test;
 -- describe test;
 -- SELECT * FROM test;
 -- TRUNCATE TABLE test;
@@ -79,35 +77,45 @@ CREATE TABLE Room(
 -- select * from room;
 
 CREATE TABLE Comorbidity(
-    patient_id  REFERENCES Patient(patient_id)  NOT NULL,
+    patient_id  REFERENCES Patient(patient_id)  ON DELETE CASCADE   NOT NULL,
     comorbidities  CHAR(50)                        NOT NULL,
-    CONSTRAINT comodity_key PRIMARY KEY(patient_id, comorbidities)
+    CONSTRAINT comorbidity_key PRIMARY KEY(patient_id, comorbidities)
 );
 -- select * from comorbidity;
 
 CREATE TABLE RespiratoryRate_Test(
-    test_id REFERENCES Test(test_id)    NOT NULL    PRIMARY KEY,
+    test_id REFERENCES Test(test_id)    ON DELETE CASCADE    NOT NULL    PRIMARY KEY,
     respiratory_result  FLOAT   NOT NULL
 );
 -- select * from respiratoryRate_test;
 
 CREATE TABLE SPO2_Test(
-    test_id REFERENCES Test(test_id)    NOT NULL    PRIMARY KEY,
+    test_id REFERENCES Test(test_id)    ON DELETE CASCADE    NOT NULL    PRIMARY KEY,
     SPO2_result     FLOAT   NOT NULL
 );
 -- select * from spo2_test;
 
 CREATE TABLE Quick_Test(
-    test_id REFERENCES Test(test_id)    NOT NULL    PRIMARY KEY,
+    test_id REFERENCES Test(test_id)    ON DELETE CASCADE    NOT NULL    PRIMARY KEY,
     quick_test_result       char(10)       NOT NULL,
-    cycle_threshold_value   FLOAT        NULL
+    cycle_threshold_value   FLOAT   NULL,
+    --If quick_test_result is positive, the cycle_threshold_value must not be null
+    CONSTRAINT positive_result_requires CHECK (
+        (quick_test_result = 'Positive' AND cycle_threshold_value IS NOT NULL) OR 
+        (quick_test_result != 'Positive')
+    )
 );
 -- select * from quick_test;
 
 CREATE TABLE PCR_Test(
-    test_id REFERENCES Test(test_id)    NOT NULL    PRIMARY KEY,
+    test_id REFERENCES Test(test_id)    ON DELETE CASCADE    NOT NULL    PRIMARY KEY,
     PCR_result  char(10)       NOT NULL,
-    cycle_threshold_value   FLOAT    NULL
+    cycle_threshold_value   FLOAT   NULL,
+    --If pcr_result is positive, the cycle_threshold_value must not be null
+    CONSTRAINT positive_result_requires_value CHECK (
+        (PCR_result = 'Positive' AND cycle_threshold_value IS NOT NULL) OR
+        (PCR_result != 'Positive')
+    )
 );
 -- select * from pcr_test;
 
@@ -128,7 +136,7 @@ CREATE TABLE People(
 -- select * from people;
 
 CREATE TABLE HeadOfCamp(
-    head_of_camp_id REFERENCES People(person_id)    NOT NULL    PRIMARY KEY,
+    head_of_camp_id REFERENCES People(person_id)    ON DELETE CASCADE   NOT NULL    PRIMARY KEY,
     first_name          CHAR(20)        NOT NULL,
     last_name           CHAR(20)        NOT NULL,
     date_of_birth       DATE            NOT NULL,
@@ -136,6 +144,8 @@ CREATE TABLE HeadOfCamp(
     address             CHAR(100)       NOT NULL,
     start_date_of_work  DATE            NOT NULL
 );
+
+CREATE UNIQUE INDEX head ON headofcamp(1); --Only one row constaint 
 -- select * from headOfcamp;
 
 
@@ -143,13 +153,13 @@ CREATE TABLE Admission(
     admission_id   CHAR(15)    NOT NULL    PRIMARY KEY,
     admission_date DATE        NOT NULL,
     from_where      CHAR(100)   NOT NULL,
-    staff_id    REFERENCES People(person_id)    NOT NULL,
-    patient_id  REFERENCES Patient(patient_id)  NOT NULL
+    staff_id    REFERENCES People(person_id)    ON DELETE CASCADE   NOT NULL,
+    patient_id  REFERENCES Patient(patient_id)  ON DELETE CASCADE   NOT NULL
 );
 -- select * from admission;
 
 CREATE TABLE PhoneNumber(
-    person_id REFERENCES People(person_id)  NOT NULL,
+    person_id REFERENCES People(person_id)  ON DELETE CASCADE   NOT NULL,
     phone_number    CHAR(10)    NOT NULL,
     CONSTRAINT  phone_number_key PRIMARY KEY(person_id, phone_number)
 );
@@ -165,7 +175,7 @@ CREATE TABLE Medication(
 -- select * from medication;
 
 CREATE TABLE BelongTO(
-    test_id REFERENCES Test(test_id)    NOT NULL ,
+    test_id REFERENCES Test(test_id)    ON DELETE CASCADE   NOT NULL ,
     admission_id REFERENCES Admission(admission_id),
     CONSTRAINT belong_to_key PRIMARY KEY(test_id, admission_id)
 );
@@ -179,36 +189,36 @@ CREATE TABLE Treatment(
 );
 -- select * from treatment;
 CREATE TABLE Treat(
-    patient_id      REFERENCES Patient(patient_id)      NOT NULL,
-    doctor_id       REFERENCES People(person_id)        NOT NULL,
-    treatment_id    REFERENCES Treatment(treatment_id)  NOT NULL,
+    patient_id      REFERENCES Patient(patient_id)      ON DELETE CASCADE   NOT NULL,
+    doctor_id       REFERENCES People(person_id)        ON DELETE CASCADE   NOT NULL,
+    treatment_id    REFERENCES Treatment(treatment_id)  ON DELETE CASCADE   NOT NULL,
     CONSTRAINT treat_key PRIMARY KEY(patient_id, doctor_id, treatment_id)
 );
 -- select * from treat;
 
 CREATE TABLE TakeCare(
-    patient_id  REFERENCES Patient(patient_id)  NOT NULL,
-    nurse_id    REFERENCES People(person_id)    NOT NULL,
+    patient_id  REFERENCES Patient(patient_id)  ON DELETE CASCADE   NOT NULL,
+    nurse_id    REFERENCES People(person_id)    ON DELETE CASCADE   NOT NULL,
     start_date  DATE    NOT NULL,
     CONSTRAINT take_care_key PRIMARY KEY(patient_id, nurse_id, start_date)
 );
 -- select * from takecare;
 
 CREATE TABLE Use(
-    unique_code REFERENCES Medication(unique_code) NOT NULL,
-    treatment_id REFERENCES Treatment(treatment_id) NOT NULL,
+    unique_code REFERENCES Medication(unique_code)  ON DELETE CASCADE   NOT NULL,
+    treatment_id REFERENCES Treatment(treatment_id) ON DELETE CASCADE   NOT NULL,
     CONSTRAINT use_key PRIMARY KEY(unique_code, treatment_id)
 );
 -- select * from use;
 
 CREATE TABLE LocationHistory (
-    building            CHAR(10)     NOT NULL,
+    building            CHAR(10)    NOT NULL,
     floor               INT         NOT NULL,
-    room_number         CHAR(10)     NOT NULL,
-    patient_id          CHAR(10)    NOT NULL,
+    room_number         CHAR(10)    NOT NULL,
+    patient_id          REFERENCES  Patient(patient_id)     ON DELETE CASCADE   NOT NULL,
     checkin_datetime    TIMESTAMP   NOT NULL,
-    check_out_datetime  TIMESTAMP    ,
+    check_out_datetime  TIMESTAMP,
     CONSTRAINT location_history_key PRIMARY KEY(building, floor, room_number, patient_id, checkin_datetime),
-    CONSTRAINT fk_location_history_room FOREIGN KEY (building, floor, room_number) REFERENCES Room(building, floor, room_number)
+    CONSTRAINT fk_location_history_room FOREIGN KEY (building, floor, room_number) REFERENCES Room(building, floor, room_number)    ON DELETE CASCADE
 );
 -- select * from locationhistory;
