@@ -20,6 +20,7 @@ DROP TABLE Patient CASCADE CONSTRAINTS;
 DROP TABLE People CASCADE CONSTRAINTS;
 DROP TABLE HeadOfCamp CASCADE CONSTRAINTS;
 
+--Mark warning
 CREATE OR REPLACE PROCEDURE warning(
     start_time TIMESTAMP,
     end_time TIMESTAMP
@@ -77,9 +78,14 @@ SET SERVEROUTPUT ON;
 DROP TYPE TestResultType force;
 CREATE OR REPLACE TYPE TestResultType AS OBJECT (
     test_id CHAR(10),
-    test_type CHAR(100),
+    test_type CHAR(30),
     datetime TIMESTAMP,
-    respiratori_result  FLOAT
+    respiratori_result  FLOAT,
+    spo2_result FLOAT,
+    quick_test_result   CHAR(10),
+    ct_quick_test   FLOAT,
+    pcr_result      CHAR(10),
+    ct_pcr_test     FLOAT
 );
 /
 
@@ -101,7 +107,12 @@ BEGIN
                    ELSE 'No Test Found'
                END AS test_type,
                t.datetime,
-               r.respiratory_result
+               r.respiratory_result,
+               s.spo2_result,
+               q.quick_test_result,
+               q.cycle_threshold_value AS ct_quick_test,
+               p.pcr_result,
+               p.cycle_threshold_value AS ct_pcr_test
         FROM Test t
         LEFT JOIN RespiratoryRate_Test r ON t.test_id = r.test_id
         LEFT JOIN SPO2_Test s ON t.test_id = s.test_id
@@ -111,7 +122,8 @@ BEGIN
         ORDER BY datetime DESC
     )LOOP
         test_list.extend();
-        test_list(test_list.count) := TestResultType(row.test_id, row.test_type, row.datetime, row.respiratory_result);
+        test_list(test_list.count) := TestResultType(row.test_id, row.test_type, row.datetime, row.respiratory_result, row.spo2_result, row.quick_test_result, row.ct_quick_test,
+        row.pcr_result, row.ct_pcr_test);
     END LOOP;
     RETURN test_list;
 END;
