@@ -150,7 +150,7 @@ CREATE UNIQUE INDEX head ON headofcamp(1); --Only one row constaint
 
 
 CREATE TABLE Admission(
-    admission_id   CHAR(15)    NOT NULL    PRIMARY KEY,
+    admission_id   CHAR(10)    NOT NULL    PRIMARY KEY,
     admission_date DATE        NOT NULL,
     from_where      CHAR(100)   NOT NULL,
     staff_id    REFERENCES People(person_id)    ON DELETE CASCADE   NOT NULL,
