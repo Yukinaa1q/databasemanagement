@@ -182,7 +182,7 @@ CREATE TABLE BelongTO(
 -- select * from belongto;
 
 CREATE TABLE Treatment(
-    treatment_id        CHAR(20)        NOT NULL    PRIMARY KEY,
+    treatment_id        CHAR(10)        NOT NULL    PRIMARY KEY,
     initiation_date     DATE            NOT NULL,
     completion_date     DATE             NULL,
     overall_result              CHAR(100)         NULL
@@ -204,10 +204,13 @@ CREATE TABLE TakeCare(
 );
 -- select * from takecare;
 
-CREATE TABLE Use(
-    unique_code REFERENCES Medication(unique_code)  ON DELETE CASCADE   NOT NULL,
-    treatment_id REFERENCES Treatment(treatment_id) ON DELETE CASCADE   NOT NULL,
-    CONSTRAINT use_key PRIMARY KEY(unique_code, treatment_id)
+CREATE TABLE Use (
+    unique_code         CHAR(10)    NOT NULL,
+    treatment_id        CHAR(10)    NOT NULL,
+    amount              NUMBER, -- Add the new column
+    CONSTRAINT use_key PRIMARY KEY(unique_code, treatment_id),
+    FOREIGN KEY (unique_code) REFERENCES Medication(unique_code) ON DELETE CASCADE,
+    FOREIGN KEY (treatment_id) REFERENCES Treatment(treatment_id) ON DELETE CASCADE
 );
 -- select * from use;
 
