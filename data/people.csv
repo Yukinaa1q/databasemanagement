@@ -20,10 +20,10 @@ E000000018;Tran;Van Son;22/07/1985;M;96 Le Loi, Tan Thoi Nhi Commune, Hoc Mon Di
 E000000019;Huynh;Tien Vuong;01/08/2002;M;566 Lac Long Quan, Ward 10, Tan Binh Dist, Ho Chi Minh City;15/08/2020;;;;;X
 E000000020;Nguyen;Thi Tam;01/01/1994;F;709 Kinh Duong Vuong, Ward 13, Dist 6, Ho Chi Minh City;15/08/2020;;;;;X
 E000000021;Le;Thu Hao;12/01/1989;F;129 Khanh Hoi, Ward 4, Dist 4, Ho Chi Minh City;30/08/2020;X;;;;
-E000000022;Le;Pham Huy Hoàng;01/01/1986;M;240 Hai Thuong Lan Ong, Ward 14, Dist 5, Ho Chi Minh City;30/08/2020;;;X;;
+E000000022;Le;Pham Huy Hoang;01/01/1986;M;240 Hai Thuong Lan Ong, Ward 14, Dist 5, Ho Chi Minh City;30/08/2020;;;X;;
 E000000023;Tran;Thanh Thuy;15/03/1988;F;88 Thanh Thai, Ward 14, Dist 10, Ho Chi Minh City;30/08/2020;;;X;;X
 E000000024;Nguyen;Cong Thinh;07/10/1989;M;121 Kinh Duong Vuong, Ward 12, Dist 6, Ho Chi Minh City;30/08/2020;;;X;;X
-E000000025;Tran;Ngọc Bao;17/08/1988;M;66 Hoang Van Thu, Ward 9, Phu Nhuan Dist, Ho Chi Minh City;30/08/2020;;;;;X
+E000000025;Tran;Ngoc Bao;17/08/1988;M;66 Hoang Van Thu, Ward 9, Phu Nhuan Dist, Ho Chi Minh City;30/08/2020;;;;;X
 E000000026;Nguyen;Thi Thu Dung;21/12/1992;F;66 Hoang Van Thu, Ward 9, Phu Nhuan Dist, Ho Chi Minh City;30/08/2020;;;;;X
 E000000027;Dinh ;Manh Hai ;07/12/2000;M;186 Long Thuan, Long Phuoc Ward, Dist 9, Ho Chi Minh City;30/08/2020;;;;;X
 E000000028;Nguyen;Hoang Xuan Thao;01/01/1993;F;834 Au Co, Tan Thanh Ward, Tan Phu Dist, Ho Chi Minh City;30/08/2020;;;;X;
@@ -59,7 +59,7 @@ E000000057;Ngo;Thanh Thuy;01/01/1985;F;36 Lac Long Quan, Phu Cuong Ward, Thu Dau
 E000000058;Hoang;Minh;11/04/1989;M;163 Hong Bang, Ward 12, Dist 5, Ho Chi Minh City;01/10/2020;;;X;;
 E000000059;Nguyen;Trong Tri;05/09/1984;M;39 Thao Dien, Thao Dien Ward, Dist 2, Ho Chi Minh City ;01/10/2020;;;X;;
 E000000060;Nguyen;My Anh;09/07/1985;F;68 Thach Lam, Phu Thanh Ward, Tan Phu Dist, Ho Chi Minh City;01/10/2020;;;X;;
-E000000061;Huỳnh;Thi Mong Cam;18/10/1989;F;52 Thap Muoi, Ward 2, Dist 6, Ho Chi Minh City;01/10/2020;;;X;;
+E000000061;Huynh;Thi Mong Cam;18/10/1989;F;52 Thap Muoi, Ward 2, Dist 6, Ho Chi Minh City;01/10/2020;;;X;;
 E000000062;Nguyen;Huynh Phuong;25/07/1979;M;400 Tan Ky Tan Quy, Son Ky Ward, Tan Phu Dist, Ho Chi Minh City;01/10/2020;;X;;;
 E000000063;Tran;Van Trung;14/02/1980;M;95 Ton That Thuyet, Ward 16, Dist 4, Ho Chi Minh City;01/10/2020;X;;;;
 E000000064;Le;Tien;22/12/1985;M;888 Cach Mang Thang Tam, Ward 15, Dist 10, Ho Chi Minh City;01/11/2020;X;;;;
