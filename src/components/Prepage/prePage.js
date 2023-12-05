@@ -11,10 +11,10 @@ const Prepage = () => {
     <div className="prePage">
       <Navbar />
       <div className="introText">
-        Chào mừng bạn đến với hệ thống quản lý bệnh viện
+        Welcome to the Quarantine Management system
       </div>
       <Button className="logInButton" onClick={() => navigate("Login")}>
-        Đăng nhập
+        Log in
       </Button>
       <img className="introPic" src={pic} alt="" />
       <div className="fo">

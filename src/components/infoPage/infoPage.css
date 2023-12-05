@@ -51,11 +51,12 @@
 }
 .pn {
   width: 390px;
+  padding-left: 80px;
 }
 
 .search {
   position: absolute;
-  top: 780px;
+  top: 350px;
   left: 700px;
   margin: 30px 0;
   width: 459px;
@@ -76,4 +77,27 @@
 }
 .search:active {
   background-color: #024357;
+}
+.horizontal-table {
+  position: absolute;
+  top: 500px;
+  left: 200px;
+}
+.result-table {
+  width: 100%;
+  color: black;
+  border-color: #04b4e9;
+  border: 5px solid #04b4e9;
+}
+#table-row {
+  background-color: #78d0ec;
+}
+#table-cell {
+  height: 100px;
+  font-size: 40px;
+  padding: 20px;
+}
+.fo1 {
+  position: absolute;
+  top: 1600px;
 }

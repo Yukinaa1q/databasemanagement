@@ -1,0 +1,18 @@
+.fo2 {
+  position: absolute;
+  top: 4000px;
+}
+.vertical-table {
+  position: absolute;
+  top: 500px;
+  left: 50px;
+}
+.headss,
+.cells {
+  width: 350px;
+  background-color: #78d0ec;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+}

@@ -10,7 +10,8 @@
 .big3,
 .big4,
 .big5,
-.big6 {
+.big6,
+.big7 {
   display: flex;
   width: 100vw;
   justify-content: space-around;

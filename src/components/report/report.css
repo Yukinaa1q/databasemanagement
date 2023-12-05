@@ -1,0 +1,72 @@
+.fo3 {
+  position: absolute;
+  top: 4200px;
+}
+.vertical-table1 {
+  position: absolute;
+  top: 500px;
+  left: 50px;
+}
+.headss1,
+.cells1 {
+  width: fit-content;
+  background-color: #78d0ec;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+}
+.headss1 {
+  position: sticky;
+  top: 0;
+}
+.vertical-table2 {
+  position: absolute;
+  top: 800px;
+  left: 50px;
+}
+
+.vertical-table3 {
+  position: absolute;
+  top: 1000px;
+  left: 50px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+.vertical-table4 {
+  position: absolute;
+  top: 1600px;
+  left: 50px;
+  max-height: 500px;
+  overflow-y: scroll;
+  border-top: 5px solid #04b4e9;
+  border-bottom: 5px solid #04b4e9;
+}
+.vertical-table5 {
+  position: absolute;
+  top: 2300px;
+  left: 50px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+.vertical-table6 {
+  position: absolute;
+  top: 2800px;
+  left: 50px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+.vertical-table7 {
+  position: absolute;
+  top: 3200px;
+  left: 50px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+.vertical-table8 {
+  position: absolute;
+  top: 3800px;
+  left: 50px;
+  max-height: 500px;
+  overflow-y: scroll;
+}

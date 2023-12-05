@@ -1,0 +1,15 @@
+.table-container {
+  position: absolute;
+  top: 500px;
+  margin: 20px;
+  padding: 20px;
+  left: 200px;
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+  flex-direction: column;
+  margin-bottom: 20px; /* Add spacing between tables if desired */
+}
+.fo9 {
+  position: absolute;
+  top: 3000px;
+}
