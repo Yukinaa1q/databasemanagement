@@ -70,3 +70,48 @@
   max-height: 500px;
   overflow-y: scroll;
 }
+.header1,
+.header2,
+.header3,
+.header4,
+.header5,
+.header6,
+.header7 {
+  color: black;
+  font-family: Andika;
+}
+.header1 {
+  position: relative;
+  left: 50px;
+  top: -20px;
+}
+.header2 {
+  position: relative;
+  left: 50px;
+  top: 250px;
+}
+.header3 {
+  position: relative;
+  left: 50px;
+  top: 400px;
+}
+.header4 {
+  position: relative;
+  left: 50px;
+  top: 960px;
+}
+.header5 {
+  position: relative;
+  left: 50px;
+  top: 1630px;
+}
+.header6 {
+  position: relative;
+  left: 50px;
+  top: 2090px;
+}
+.header7 {
+  position: relative;
+  left: 50px;
+  top: 3060px;
+}
