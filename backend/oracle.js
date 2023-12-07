@@ -2,6 +2,7 @@
 
 const express = require("express");
 const oracledb = require("oracledb");
+const mysql = require("mysql");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
@@ -20,7 +21,7 @@ oracledb.initOracleClient({ libDir: "D:\\instantclient_21_12" }); // This path i
 // Then set the environment variable for the path D:\\instantclient_21_12
 // Download The Visual Studio 2015, 2017, 2019, and 2022
 // https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170
-
+// http://localhost:8000/patients/' UNION SELECT user_password from user_account--
 let pool;
 let connection;
 
@@ -79,8 +80,8 @@ app.post("/login", async (req, res, next) => {
 
     try {
       result = await connection.execute(
-        `SELECT user_id, username,role FROM user_account WHERE username = :username AND user_password = :password`,
-        { username, password }
+        `SELECT user_id, username,role FROM user_account WHERE username = :username AND user_password = :password`, //If use interpolations instead of placeholders and bind objects
+        { username, password } // the web can be sql injected
       );
       console.log(result);
     } catch (error) {
@@ -91,7 +92,10 @@ app.post("/login", async (req, res, next) => {
       connection.close();
     }
 
-    if (result && result.rows.length === 1) {
+    if (
+      result &&
+      result.rows.length === 1 //If you drop the second condition then the web can be sql injected (when the query was used interpolations )
+    ) {
       const user = {
         user_id: result.rows[0][0],
         username: result.rows[0][1],
@@ -184,6 +188,7 @@ ProtectedRoutes.get("/patients/:patient_id", async (req, res) => {
     const comorbiditiesResult = await connection.execute(comorbiditiesQuery, [
       patient_id,
     ]);
+
     const comorbidities = comorbiditiesResult.rows;
 
     connection.close();
@@ -207,6 +212,30 @@ ProtectedRoutes.get("/patients/:patient_id", async (req, res) => {
     res.status(500).json({ message: "Internal Server Error" });
   }
 });
+/*app.get("/patients/:id", async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    // Connect to Oracle Database
+    const connection = await pool.getConnection();
+
+    // Run the query
+    const result = await connection.execute(
+      `SELECT patient_id  FROM patient WHERE patient_id = '${id}'`
+      // [id],
+      // { outFormat: oracledb.OUT_FORMAT_OBJECT }
+    );
+
+    // Release the connection
+    await connection.close();
+
+    // Send the result as JSON
+    res.json(result.rows);
+  } catch (error) {
+    console.error(error.message);
+    res.status(500).send("Internal Server Error");
+  }
+});*/
 //part 3.1.1 API endpoint to get full name, phone, and comorbidities by phone
 ProtectedRoutes.get("/patients1/:phone", async (req, res) => {
   const { phone } = req.params;
@@ -365,17 +394,31 @@ ProtectedRoutes.get("/patients/:patient_id/details", async (req, res) => {
     `;
     //Query to get admission information
     const admissionQuery = `SELECT * FROM ADMISSION WHERE patient_id = :1`;
-    //Query to get medication
-    const medicationQuery = `SELECT 
-    t.patient_id, t.doctor_id, t.treatment_id,
-    tm.initiation_date, tm.completion_date,
-    u.unique_code,u.amount, 
-    m.medication_name,m. price
+    //Query to get medication1 (get the doctor name, treatment id and patient id)
+    const medicationQuery1 = `SELECT 
+    t.patient_id, t.doctor_id, t.treatment_id
+    FROM TREAT t
+    JOIN  treatment tm ON t.TREATMENT_id = tm.treatment_id
+    WHERE t.Patient_ID  = :1`;
+    //Query to get medication2 (the medicine names of the treatment_ids   )
+    const medicationQuery2 = `SELECT t.treatment_id,
+    u.unique_code, u.amount,
+    m.medication_name,m. price as "unit_price"
     FROM TREAT t
     JOIN  treatment tm ON t.TREATMENT_id = tm.treatment_id
     JOIN use u ON u.treatment_id = t.treatment_id
     JOIN medication m ON m.unique_code = u.unique_code
-    WHERE t.Patient_ID  = :1`;
+    WHERE t.Patient_ID  = :1
+    ORDER BY t.treatment_id ASC`;
+    //Query to get medication3 (total price of one treatment)
+    const medicationQuery3 = `SELECT t.TREATMENT_id, SUM((u.amount * m.price)) as total_price
+    FROM TREAT t
+    JOIN  treatment tm ON t.TREATMENT_id = tm.treatment_id
+    JOIN use u ON u.treatment_id = t.treatment_id
+    JOIN medication m ON m.unique_code = u.unique_code
+    WHERE t.Patient_ID  = :1
+    GROUP BY t.treatment_id
+    ORDER BY t.treatment_id`;
     //Query to get discharge date
     const dischargeQuery = `SELECT * FROM dischargedate WHERE patient_id=:1`;
     // Execute all queries
@@ -395,7 +438,13 @@ ProtectedRoutes.get("/patients/:patient_id/details", async (req, res) => {
     const admissionResult = await connection.execute(admissionQuery, [
       patient_id,
     ]);
-    const medicationResult = await connection.execute(medicationQuery, [
+    const medicationResult1 = await connection.execute(medicationQuery1, [
+      patient_id,
+    ]);
+    const medicationResult2 = await connection.execute(medicationQuery2, [
+      patient_id,
+    ]);
+    const medicationResult3 = await connection.execute(medicationQuery3, [
       patient_id,
     ]);
     const dischargeResult = await connection.execute(dischargeQuery, [
@@ -408,7 +457,9 @@ ProtectedRoutes.get("/patients/:patient_id/details", async (req, res) => {
     const testResults = testResultsResult.rows;
     const treatments = treatmentResult.rows;
     const admissions = admissionResult.rows;
-    const medications = medicationResult.rows;
+    const medications1 = medicationResult1.rows;
+    const medications2 = medicationResult2.rows;
+    const medications3 = medicationResult3.rows;
     const discharges = dischargeResult.rows;
     // Combine results and send as JSON
     const result = {
@@ -418,7 +469,9 @@ ProtectedRoutes.get("/patients/:patient_id/details", async (req, res) => {
       testResults,
       treatments,
       admissions,
-      medications,
+      medications1,
+      medications2,
+      medications3,
       discharges,
     };
     if (testResults.length > 0) {
